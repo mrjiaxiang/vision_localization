@@ -1,0 +1,9 @@
+#ifndef VISION_LOCALIZATION_GLOBAL_DEFINATION_H_IN_
+#define VISION_LOCALIZATION_GLOBAL_DEFINATION_H_IN_
+
+#include <string>
+
+namespace vision_localization {
+const std::string WORK_SPACE_PATH = "@WORK_SPACE_PATH@";
+}
+#endif

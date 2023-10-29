@@ -1,0 +1,3 @@
+<launch>
+<node pkg="vision_localization"  type="read_bag_node"  name="read_bag_node"  output="screen"></node>
+</launch>
