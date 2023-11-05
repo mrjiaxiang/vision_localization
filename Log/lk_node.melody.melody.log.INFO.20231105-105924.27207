@@ -1,0 +1,44 @@
+Log file created at: 2023/11/05 10:59:24
+Running on machine: melody
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I1105 10:59:24.598006 27207 tracker_flow.cpp:9] config file path : /home/melody/slam/vision_localization_ws/src/vision_localization/config/config.json
+I1105 10:59:24.600814 27207 params.cpp:85] USE_IMU : 0
+I1105 10:59:24.600827 27207 params.cpp:103] result path /home/tony-ws1/output//vio.csv
+W1105 10:59:24.600833 27207 params.cpp:122]  fix extrinsic param 
+I1105 10:59:24.600921 27207 params.cpp:133] camera number : 2
+I1105 10:59:24.600929 27207 params.cpp:196] reading paramerter of camera : /home/melody/slam/vision_localization_ws/src/vision_localization/config/kitti_raw/cam_10_03.yaml
+I1105 10:59:24.600993 27207 params.cpp:196] reading paramerter of camera : /home/melody/slam/vision_localization_ws/src/vision_localization/config/kitti_raw/cam_10_03.yaml
+I1105 10:59:24.601027 27207 params.cpp:177] Synchronized sensors, fix time offset: 0
+I1105 10:59:24.601047 27207 params.cpp:182] ROW : 376 COL : 1241
+I1105 10:59:24.601050 27207 params.cpp:187] no imu, fix extrinsic param; no time offset calibration
+I1105 10:59:28.228387 27207 tracker_flow.cpp:95] good tracker
+I1105 10:59:28.322192 27207 tracker_flow.cpp:95] good tracker
+I1105 10:59:28.426780 27207 tracker_flow.cpp:95] good tracker
+I1105 10:59:28.527031 27207 tracker_flow.cpp:95] good tracker
+I1105 10:59:28.616896 27207 tracker_flow.cpp:95] good tracker
+I1105 10:59:28.726054 27207 tracker_flow.cpp:95] good tracker
+I1105 10:59:28.822901 27207 tracker_flow.cpp:95] good tracker
+I1105 10:59:28.928010 27207 tracker_flow.cpp:95] good tracker
+I1105 10:59:29.026780 27207 tracker_flow.cpp:95] good tracker
+I1105 10:59:29.129639 27207 tracker_flow.cpp:95] good tracker
+I1105 10:59:29.333588 27207 tracker_flow.cpp:95] good tracker
+I1105 10:59:29.425174 27207 tracker_flow.cpp:95] good tracker
+I1105 10:59:29.532099 27207 tracker_flow.cpp:95] good tracker
+I1105 10:59:29.627266 27207 tracker_flow.cpp:95] good tracker
+I1105 10:59:29.727295 27207 tracker_flow.cpp:95] good tracker
+I1105 10:59:29.827687 27207 tracker_flow.cpp:95] good tracker
+I1105 10:59:29.928176 27207 tracker_flow.cpp:95] good tracker
+I1105 10:59:30.027489 27207 tracker_flow.cpp:95] good tracker
+I1105 10:59:30.127239 27207 tracker_flow.cpp:95] good tracker
+I1105 10:59:30.226841 27207 tracker_flow.cpp:95] good tracker
+I1105 10:59:30.328217 27207 tracker_flow.cpp:95] good tracker
+I1105 10:59:30.424448 27207 tracker_flow.cpp:95] good tracker
+I1105 10:59:30.529352 27207 tracker_flow.cpp:95] good tracker
+I1105 10:59:30.626483 27207 tracker_flow.cpp:95] good tracker
+I1105 10:59:30.728950 27207 tracker_flow.cpp:95] good tracker
+I1105 10:59:30.825660 27207 tracker_flow.cpp:95] good tracker
+I1105 10:59:30.928459 27207 tracker_flow.cpp:95] good tracker
+I1105 10:59:31.025349 27207 tracker_flow.cpp:95] good tracker
+I1105 10:59:31.125795 27207 tracker_flow.cpp:95] good tracker
+I1105 10:59:31.225076 27207 tracker_flow.cpp:95] good tracker
+I1105 10:59:31.326781 27207 tracker_flow.cpp:95] good tracker

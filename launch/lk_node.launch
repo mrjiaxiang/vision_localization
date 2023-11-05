@@ -1,0 +1,3 @@
+<launch>
+<node pkg="vision_localization"  type="lk_node"  name="lk_node"  output="screen"></node>
+</launch>

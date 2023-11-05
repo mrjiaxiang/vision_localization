@@ -25,6 +25,10 @@ find_package(catkin REQUIRED COMPONENTS
   cv_bridge
 )
 
+# find_package(PkgConfig REQUIRED)
+# pkg_check_modules(JSONCPP jsoncpp)
+# include_directories(${JSONCPP_LIBRARIES})
+
 ## Generate messages in the 'msg' folder
 # add_message_files(
 #     FILES
@@ -69,18 +73,16 @@ include(cmake/PCL.cmake)
 include(cmake/sophus.cmake)
 include(cmake/g2o.cmake)
 include(cmake/ceres.cmake)
+include(cmake/json.cmake)
 
 include_directories(include ${catkin_INCLUDE_DIRS})
+
 include(cmake/global_defination.cmake)
 catkin_package()
 
 file(GLOB_RECURSE ALL_SRCS "*.cpp")
 file(GLOB_RECURSE NODE_SRCS "src/apps/*_node.cpp")
 list(REMOVE_ITEM ALL_SRCS ${NODE_SRCS})
-
-# add_executable(data_pretreat_node src/apps/data_pretreat_node.cpp ${ALL_SRCS})
-# add_dependencies(data_pretreat_node ${catkin_EXPORTED_TARGETS})
-# target_link_libraries(data_pretreat_node ${catkin_LIBRARIES} ${ALL_TARGET_LIBRARIES})
 
 # add_executable(front_end_node src/apps/front_end_node.cpp ${ALL_SRCS})
 # add_dependencies(front_end_node ${catkin_EXPORTED_TARGETS})
@@ -96,6 +98,10 @@ list(REMOVE_ITEM ALL_SRCS ${NODE_SRCS})
 
 add_executable(read_bag_node src/apps/read_bag_node.cpp ${ALL_SRCS})
 target_link_libraries(read_bag_node ${catkin_LIBRARIES} ${ALL_TARGET_LIBRARIES})
+
+add_executable(lk_node src/apps/lk_node.cpp ${ALL_SRCS})
+add_dependencies(lk_node ${catkin_EXPORTED_TARGETS})
+target_link_libraries(lk_node ${catkin_LIBRARIES} ${ALL_TARGET_LIBRARIES})
 
 #############
 ## Install ##

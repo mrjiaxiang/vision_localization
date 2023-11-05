@@ -1,0 +1,13 @@
+Log file created at: 2023/11/05 11:27:48
+Running on machine: melody
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I1105 11:27:48.233083 73506 tracker_flow.cpp:9] config file path : /home/melody/slam/vision_localization_ws/src/vision_localization/config/config.json
+I1105 11:27:48.235795 73506 params.cpp:85] USE_IMU : 0
+I1105 11:27:48.235814 73506 params.cpp:103] result path /home/tony-ws1/output//vio.csv
+W1105 11:27:48.235821 73506 params.cpp:122]  fix extrinsic param 
+I1105 11:27:48.235947 73506 params.cpp:133] camera number : 2
+I1105 11:27:48.235956 73506 params.cpp:196] reading paramerter of camera : /home/melody/slam/vision_localization_ws/src/vision_localization/config/kitti_raw/cam_10_03.yaml
+I1105 11:27:48.236032 73506 params.cpp:196] reading paramerter of camera : /home/melody/slam/vision_localization_ws/src/vision_localization/config/kitti_raw/cam_10_03.yaml
+I1105 11:27:48.236064 73506 params.cpp:177] Synchronized sensors, fix time offset: 0
+I1105 11:27:48.236086 73506 params.cpp:182] ROW : 376 COL : 1241
+I1105 11:27:48.236091 73506 params.cpp:187] no imu, fix extrinsic param; no time offset calibration

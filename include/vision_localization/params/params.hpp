@@ -24,6 +24,8 @@ class Parameters {
 
     static void readIntrinsicParameter();
 
+    static int EQUALIZE;
+
     static double FOCAL_LENGTH;
     static int WINDOW_SIZE;
     static int NUM_OF_F;

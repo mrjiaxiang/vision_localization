@@ -1,0 +1,7 @@
+{
+  "image": {
+    "left_topic": "/kitti/camera_gray_left/image_raw",
+    "right_topic": "/kitti/camera_gray_right/image_raw",
+    "queue_size": 100
+  }
+}

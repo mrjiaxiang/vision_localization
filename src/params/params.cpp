@@ -13,6 +13,8 @@ double Parameters::INIT_DEPTH;
 double Parameters::MIN_PARALLAX;
 int Parameters::ESTIMATE_EXTRINSIC;
 
+int Parameters::EQUALIZE;
+
 double Parameters::ACC_N, Parameters::ACC_W;
 double Parameters::GYR_N, Parameters::GYR_W;
 
@@ -66,6 +68,8 @@ void Parameters::readParameters(std::string config_file) {
         fsSettings.release();
         return;
     }
+
+    fsSettings["equalize"] >> EQUALIZE;
 
     fsSettings["image0_topic"] >> IMAGE0_TOPIC;
     fsSettings["image1_topic"] >> IMAGE1_TOPIC;

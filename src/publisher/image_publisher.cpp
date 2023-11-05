@@ -26,9 +26,11 @@ void ImagePublisher::PublishData(ImageData &image_data_input, ros::Time time) {
     std_msgs::Header header;
     header.frame_id = frame_id_;
     header.stamp = time;
+
     cv::Mat image = image_data_input.getImage();
+
     sensor_msgs::ImagePtr msg =
-        cv_bridge::CvImage(header, "mono8", image).toImageMsg();
+        cv_bridge::CvImage(header, "bgr8", image).toImageMsg();
     publisher_.publish(*msg);
 }
 } // namespace vision_localization
