@@ -2,7 +2,7 @@ import rosbag
 import numpy as np
 import matplotlib.pyplot as plt
 
-bag = rosbag.Bag('/home/melody/data/V1_03_difficult.bag')
+bag = rosbag.Bag('/home/melody/data/img_imu/img_imu.bag')
 
 # 计算采样时间间隔
 dt = 1.0 / 200.0
@@ -13,7 +13,7 @@ acceleration_data = []
 angular_velocity_data = []
 
 # 读取bag文件中的IMU消息
-for topic, msg, t in bag.read_messages(topics=['/imu0']):
+for topic, msg, t in bag.read_messages(topics=['/imu']):
     timestamp = msg.header.stamp.to_sec()
     acceleration = msg.linear_acceleration
     angular_velocity = msg.angular_velocity

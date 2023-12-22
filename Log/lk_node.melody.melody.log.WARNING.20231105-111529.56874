@@ -1,4 +1,0 @@
-Log file created at: 2023/11/05 11:15:29
-Running on machine: melody
-Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
-W1105 11:15:29.190048 56874 params.cpp:122]  fix extrinsic param 

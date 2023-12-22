@@ -1,7 +1,7 @@
 import rosbag
 import matplotlib.pyplot as plt
 
-bag = rosbag.Bag('V1_03_difficult.bag')
+bag = rosbag.Bag('/home/melody/data/img_imu/img_imu.bag')
 
 # 存储时间戳和IMU数据的列表
 timestamps = []
@@ -9,7 +9,7 @@ acceleration_data = []
 angular_velocity_data = []
 
 # 读取bag文件中的IMU消息
-for topic, msg, t in bag.read_messages(topics=['imu0_topic']):
+for topic, msg, t in bag.read_messages(topics=['/imu']):
     timestamp = msg.header.stamp.to_sec()
     acceleration = msg.linear_acceleration
     angular_velocity = msg.angular_velocity
