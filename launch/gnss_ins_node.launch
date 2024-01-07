@@ -1,0 +1,3 @@
+<launch>
+<node pkg="vision_localization"  type="gnss_ins_node"  name="gnss_ins_node"  output="screen"></node>
+</launch>

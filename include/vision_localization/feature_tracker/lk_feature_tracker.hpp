@@ -6,7 +6,7 @@
 #include <iostream>
 #include <queue>
 
-#include <eigen3/Eigen/Dense>
+#include <Eigen/Dense>
 #include <opencv2/opencv.hpp>
 
 using namespace std;

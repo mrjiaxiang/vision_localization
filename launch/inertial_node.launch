@@ -1,0 +1,3 @@
+<launch>
+<node pkg="vision_localization"  type="inertial_node"  name="inertial_node"  output="screen"></node>
+</launch>

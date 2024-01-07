@@ -1,0 +1,27 @@
+{
+    "imu": {
+        "topic_name": "/kitti/oxts/imu",
+        "gravity": [
+            0.0,
+            0.0,
+            9.81
+        ],
+        "bias": {
+            "angular_velocity": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "linear_acceleration": [
+                0.0,
+                0.0,
+                0.0
+            ]
+        }
+    },
+    "odometry": {
+        "topic_name": "/imu_odom",
+        "frame_id": "map"
+    },
+    "method": "median_integral"
+}

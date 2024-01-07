@@ -68,7 +68,6 @@ include(cmake/opencv.cmake)
 include(cmake/glog.cmake)
 include(cmake/YAML.cmake)
 include(cmake/geographic.cmake)
-include(cmake/protobuf.cmake)
 include(cmake/PCL.cmake)
 include(cmake/sophus.cmake)
 include(cmake/g2o.cmake)
@@ -102,6 +101,14 @@ target_link_libraries(read_bag_node ${catkin_LIBRARIES} ${ALL_TARGET_LIBRARIES})
 add_executable(lk_node src/apps/lk_node.cpp ${ALL_SRCS})
 add_dependencies(lk_node ${catkin_EXPORTED_TARGETS})
 target_link_libraries(lk_node ${catkin_LIBRARIES} ${ALL_TARGET_LIBRARIES})
+
+add_executable(inertial_node src/apps/inertial_node.cpp ${ALL_SRCS})
+add_dependencies(inertial_node ${catkin_EXPORTED_TARGETS})
+target_link_libraries(inertial_node ${catkin_LIBRARIES} ${ALL_TARGET_LIBRARIES})
+
+add_executable(gnss_ins_node src/apps/gnss_ins_node.cpp ${ALL_SRCS})
+add_dependencies(gnss_ins_node ${catkin_EXPORTED_TARGETS})
+target_link_libraries(gnss_ins_node ${catkin_LIBRARIES} ${ALL_TARGET_LIBRARIES})
 
 #############
 ## Install ##
